@@ -18,3 +18,14 @@ function func1 () {
         }
     }
 }
+
+let btnBlock = document.querySelector('.btn-block');
+console.log(btnBlock);
+let btns = document.getElementsByTagName('button');
+console.log(btns);
+
+btnBlock.addEventListener('click', function (event) {
+    if(event.target && event.target.matches('button.first')) {
+        console.log('ok');
+    }
+});
